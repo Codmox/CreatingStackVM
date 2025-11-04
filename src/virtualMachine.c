@@ -35,9 +35,17 @@ void eval(VM *vm, int instr) {
             
         }
         case SET: {
+
+        }
+        case LOD: {
+            
+        }
+        case PRN: {
             
         }
         default:
+            printf("Unknown instruction %d\n", instr);
+            vm->running = false;
             break;
     }
 };
